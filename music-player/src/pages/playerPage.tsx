@@ -9,16 +9,15 @@ const PlayerPage = () => {
           margin: "auto",
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
-          gap: "20px"
+          gap: "20px",
+          position: 'absolute'
         }}
       >
-        <p>faszkivan</p>
-      </div>
-      
       <audio controls autoPlay muted>
         <source src={audioFile} type="audio/mpeg" />
         Ez nem lejátszható a te böngésződben
       </audio>
+      </div>
     </>
   );
 };

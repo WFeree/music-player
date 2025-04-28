@@ -12,7 +12,9 @@ const PlayerPage = () => {
           gap: "20px"
         }}
       >
-        <p>faszkivan</p>
+        <h1>Title</h1>
+        <h3>Artist</h3>
+        <p>description</p>
       </div>
       
       <audio controls autoPlay muted>

@@ -1,15 +1,11 @@
 import { useState } from 'react';
-import './App.css';
-import PlayerPage from './pages/playerPage';
+import App from './App'
+import MusicPlayer from './pages/musicPlayer';
 
 function App() {
-
   return (
-    <>
-      <PlayerPage/>
-    </>
+    <div className="App">
+      <MusicPlayer clientId="2d879d45" />
+    </div>
   );
 }
-
-export default App;
-

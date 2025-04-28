@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
 
-// Types for our music data
 interface Track {
   id: string;
   name: string;
@@ -23,7 +22,7 @@ const MusicPlayer: React.FC<MusicPlayerProps> = ({ clientId }) => {
   const [searchTerm, setSearchTerm] = useState<string>('');
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  // Fetch tracks from Jamendo API
+
   useEffect(() => {
     const fetchTracks = async () => {
       try {
@@ -36,8 +35,7 @@ const MusicPlayer: React.FC<MusicPlayerProps> = ({ clientId }) => {
         }
         
         const data = await response.json();
-        
-        // Transform the data to match our Track interface
+
         const formattedTracks: Track[] = data.results.map((track: any) => ({
           id: track.id,
           name: track.name,
